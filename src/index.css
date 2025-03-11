@@ -21,6 +21,7 @@ body {
 
 .navBar {
   background-color: #ffa4b2;
+  border-right: solid 8px;
 }
 
 .nav-logo {
@@ -116,11 +117,10 @@ a.StartButton {
 form.LoginForm {
   justify-items: center;
   width: 100%;
-  padding-top: 10rem;
+  padding-top: 8rem;
 }
 
 section.LoginForm {
-  top: 15rem;
   border: solid 8px #ff8c9e;
   border-radius: 25px;
   background-color: #ffffff;
@@ -142,7 +142,7 @@ div.LoginForm {
   margin: 0;
   padding: 80px;
   border: solid 4px #ff8c9e;
-  display: grid;
+  display: gridq;
   gap: 2rem;
   height: fit-content;
   width: fit-content;
