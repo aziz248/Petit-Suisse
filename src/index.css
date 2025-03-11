@@ -1,66 +1,189 @@
-
-body{
+body {
   margin: 0;
   padding: 0;
+  position: sticky;
 }
 
-
-
-.Page_Main{
+.Page_Main {
+  position: sticky;
   margin: 0;
   display: grid;
   grid-template-columns: 15rem 1fr;
   gap: 2rem;
-  background: #aacec5;
-  background-image: url("/public/cloud3.png");
+  background-color: #6ebcae;
+  background-image: url("/public/cloud3.png"), url("/public/cloud3.png"),
+    url("/public/cloud4.png");
+  background-position: 130vh 40vh, 50vh 50vh, 80vh -10vh;
   background-repeat: no-repeat;
   background-size: 50vh 50vh;
-  background-position: 130vh 40vh;
   min-height: 100vh;
 }
 
-.navBar{
-  background-color: rgb(236, 170, 181);
+.navBar {
+  background-color: #ffa4b2;
 }
 
-.nav-list{
+.nav-logo {
+  width: 200px;
+  height: 200px;
+}
+
+.nav-list {
   position: sticky;
   min-height: fit-content;
   top: 0;
   padding: 0;
   margin: 0;
-  display:grid;
-  gap: 3.5rem;  
+  display: grid;
+  gap: 3.5rem;
   list-style: none;
-  font-size: 2rem;
 }
 a.active {
   text-decoration: none;
-  color: #aacec5;
-  font-family: 'Courier New', Courier, monospace ;
+  color: #6ebcae;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   text-align: center;
   border-radius: 100vw 0 0 100vw;
 }
-.nav-link{
+.nav-link {
   text-decoration: none;
-  font-family: 'Courier New', Courier, monospace ;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   text-align: center;
   border-radius: 100vw 0 0 100vw;
   color: black;
 }
-.nav-list li{
+.nav-list li {
   margin-left: 0.6rem;
   border-radius: 100vw 0 0 100vw;
+  border: solid 3px;
+  border-right: 0px;
+  background-color: #ff8c9e;
+  border-color: #ff8c9e;
+  font-size: 2.2rem;
 }
-.nav-link:hover{
-  color: #aacec5;
+.nav-link:hover {
+  color: #6ebcae;
 }
-.card{
+
+@font-face {
+  font-family: "Fuzzy Bubbles";
+  src: url("FuzzyBubbles-Regular.woff");
+}
+@font-face {
+  font-family: "Fuzzy Bubbles bold";
+  src: url("FuzzyBubbles-Bold.woff");
+}
+
+
+h1.TitleWelcome {
+  margin: 0;
+  padding: 2.5rem 2.5rem;
+  position: absolute;
+  left: 49rem;
+  top: 21rem;
+  text-align: center;
+  background: #ff8c9e;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  font-family: "Fuzzy Bubbles";
+  font-style: none;
+  font-weight: 400;
+  font-size: 6rem;
+  color: #b4d6cd;
+}
+
+a.StartButton {
+  text-decoration: none;
+  position: absolute;
+  margin: 0;
+  padding: 2.5rem 2.5rem;
+  left: 58.8rem;
+  top: 36rem;
+  background: #ff8c9e;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  font-family: "Fuzzy Bubbles";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #b4d6cd;
+}
+
+form.LoginForm {
+  justify-items: center;
+  width: 100%;
+  padding-top: 10rem;
+}
+
+section.LoginForm {
+  top: 15rem;
+  border: solid 8px #ff8c9e;
+  border-radius: 25px;
+  background-color: #ffffff;
+  padding: 25px;
+}
+
+div.LoginForm > div {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2.5rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+div.LoginForm {
+  background-color: #6ebcae;
+  text-align: left;
+  margin: 0;
+  padding: 80px;
+  border: solid 4px #ff8c9e;
+  display: grid;
+  gap: 2rem;
+  height: fit-content;
+  width: fit-content;
+}
+
+div.LoginForm > h1 {
+  text-align: center;
+  font-family: "Fuzzy Bubbles bold";
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.FormDivButton{
+  justify-content: center;
+}
+button.LoginForm{
+  text-decoration: none;
+  width: fit-content;
+  padding: 0.5rem 0.5rem;
+  background: #ff8c9e;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  font-family: "Fuzzy Bubbles";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+span.petit{
+  color: #ffffff;
+}
+span.suisse{
+  color:#ff8c9e;
+}
+
+.card {
   border: 1px solid rgba(41, 40, 40, 0.685);
   box-shadow: 8px 8px 8px rgb(150, 79, 138);
-  background: #FFA4B2;
+  background: #ffa4b2;
   flex: 1 0 30rem;
   min-height: 22rem;
   height: fit-content;
@@ -71,8 +194,6 @@ a.active {
   max-width: 19rem;
 }
 
-
-
 @media (max-width: 768px) {
   .card {
     justify-content: center;
@@ -85,44 +206,48 @@ a.active {
   }
 }
 
-.CardsContainer{
+.CardsContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
-
-.card .card-img{
+.card .card-img {
   max-width: 60%;
   border-radius: 50%;
   height: auto;
   text-align: center;
+  border: solid 10px #ff8c9e;
 }
 
-.card .card-title{
-  font-family: 'Courier New', Courier, monospace ;
+.card .card-title {
+  font-family: "Courier New", Courier, monospace;
   margin: 0px;
   color: orange;
 }
 
-.card .card-des{
-  font-family: 'Courier New', Courier, monospace ;
-  color:  rgba(41, 40, 40, 0.685);
+.card .card-des {
+  font-family: "Courier New", Courier, monospace;
+  color: rgba(41, 40, 40, 0.685);
 }
 
-.card .btn{
+.card .btn {
   cursor: pointer;
   border: none;
   padding: 10px;
-  background-color:teal;
+  background-color: teal;
   color: white;
   border-radius: 15px;
   font-size: medium;
   transition: 150ms ease;
   box-shadow: 5px 5px 5px orange;
 }
-.card .btn:hover{
+.card .btn:hover {
   scale: 1.25;
 }
 
+footer {
+  position: relative;
+  bottom: 0;
+}

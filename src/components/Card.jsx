@@ -35,7 +35,7 @@ Card.propTypes = {
 Card.defaultProps = {
   name: "guest",
   des: "new",
-  img_link: "/hero.png",
+  img_link: " /students.jpg",
   IsAvailable: false,
 };
 
