@@ -142,7 +142,7 @@ div.LoginForm {
   margin: 0;
   padding: 80px;
   border: solid 4px #ff8c9e;
-  display: gridq;
+  display: grid;
   gap: 2rem;
   height: fit-content;
   width: fit-content;
